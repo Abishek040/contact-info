@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abishek A - Digital Visiting Card</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+    }
+    .card {
+      background: rgba(30, 30, 30, 0.95);
+      padding: 40px 30px;
+      border-radius: 20px;
+      text-align: center;
+      width: 350px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.1);
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ff4e95;
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px rgba(255, 78, 149, 0.7);
+    }
+    h2 {
+      margin: 10px 0;
+      font-size: 24px;
+      color: #fff;
+    }
+    p {
+      color: #aaa;
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+    .contact-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: #ff4e95;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .links a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin: 10px 0;
+      padding: 12px;
+      text-decoration: none;
+      color: white;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 500;
+      transition: 0.3s;
+      background: linear-gradient(145deg, #333, #222);
+      box-shadow: 4px 4px 12px #111, -4px -4px 12px #444;
+    }
+    .links a i {
+      font-size: 18px;
+    }
+    .links a.email {color: #ff6b6b;}
+    .links a.instagram {color: #e1306c;}
+    .links a.linkedin {color: #0077b5;}
+    .links a:hover {
+      transform: scale(1.07);
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- Replace this link with your own profile photo -->
+    <img src="pic.png" alt="Profile Picture" class="profile-pic">
+    
+    <h2>Abishek A</h2>
+    <p>Student</p>
+
+    <div class="contact-title">Contact Me Via</div>
+
+    <div class="links">
+      <a href="mailto:abishek2005vk18@gmail.com" class="email"><i class="fa-solid fa-envelope"></i> Email</a>
+      <a href="https://instagram.com/itz._.abiz_xx" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i> Instagram</a>
+      <a href="https://www.linkedin.com/in/abishek-a-5703382a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+    </div>
+  </div>
+</body>
+</html>
+
